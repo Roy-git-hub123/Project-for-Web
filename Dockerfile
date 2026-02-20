@@ -5,7 +5,7 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy only the file named 'notes' from the repo into /app in the container
-COPY files .
+COPY .travis.yml .
 
 # Default command
 CMD ["cat", "notes"]
