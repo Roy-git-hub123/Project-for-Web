@@ -4,6 +4,15 @@ metadata:
   name: pod-label
   labels:
     roy: machi
+Spec:
+  replicas: 5                    # <-- set your replica count here
+  selector:
+    matchLabels:
+      roy: machi                 # must match template.metadata.labels
+  template:
+    metadata:
+      labels:
+        roy: machi
 spec:
   containers:
   - name: pod-expose
