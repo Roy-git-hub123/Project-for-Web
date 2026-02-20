@@ -13,12 +13,11 @@ spec:
     metadata:
       labels:
         roy: machi
-spec:
-  containers:
-  - name: pod-expose
-    image: arockiyamarry/page
-    ports:
-    - containerPort: 80
+    containers:
+    - name: pod-expose
+      image: arockiyamarry/page
+      ports:
+      - containerPort: 80
 
 ---
 apiVersion: v1
